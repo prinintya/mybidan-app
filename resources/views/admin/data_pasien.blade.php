@@ -99,7 +99,7 @@
 									<a class="dropdown-item" href="/data_kb">KB</a>		
 								</div>
 							</div>
-							<button type="button" class="btn btn-warning" style="margin-top:2px" href="/riwayat_pasien" >Riwayat</button>
+							<button type="button" class="btn btn-warning" style="margin-top:2px" href="/rekam_medik" >Rekam Medik</button>
 
                             </form>
 									    		</td>

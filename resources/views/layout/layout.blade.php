@@ -51,7 +51,8 @@
 
     </head>
 
-    <body  class="main-body light-theme app sidebar-mini active leftmenu-color">
+    <body  class="">
+		
 
         <!-- Loader -->
 		<div id="global-loader">
@@ -60,11 +61,11 @@
 		<!-- /Loader -->
 
         <!-- main-sidebar -->
-		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<!--<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
 		<aside class="app-sidebar bg-light" >
 			<div class="">
 				<img class="" src="/gambar/logoBidan.png" width="245px" height="130px" style="padding-left: 0.5cm; padding-top:0.2cm" >
-			</div>
+			</div>-->
 			<!--<div class="main-sidemenu sidebar-scroll">
 				<ul class="side-menu">-->
 					<!-- <li class="slide">
@@ -110,18 +111,22 @@
 						</div>
 					</div>-->
 				
-		</aside>
+		<!--</aside>-->
 		<!-- main-sidebar -->
 		<!-- main-content -->
 		<div class="main-content app-content">
 			
         <!-- main-header -->
 		
-			<div class="main-header sticky side-header nav nav-item">				
+			<div class="main-header sticky side-header nav nav-item">	
+						
 				<div class="container-fluid">
-					<div class="main-header-left">			 
+					<div class="main-header-left">	
+						<div class="">
+							<img class="" src="/gambar/logoBidan.png" width="200px" height="130px" style="padding-top: 0.7cm" >
+						</div>			 
 						<div class="app-sidebar__toggle d-md-none" data-toggle="sidebar">
-							<a class="open-toggle" href="#"><i class="fas fa-bars" style="font-size:25px"></i></a>
+							<a class="open-toggle" href="#"><i class="fas fa-bars" style="font-size:25px; color:blue"></i></a>
 							<a class="close-toggle" href="#"><i class="fas fa-times"></i></a>
 						</div>
 					</div>

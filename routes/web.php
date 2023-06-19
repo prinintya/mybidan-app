@@ -20,7 +20,7 @@ use App\Http\Controllers\AuthController;
 |
 */
 Route::get('/', function(){
-    return view('layout');
+    return view('dashboard');
 });
 
 
@@ -32,6 +32,7 @@ Route::get('/data_kehamilan', [AdminController::class, 'data_kehamilan'])->middl
 Route::get('/data_persalinan', [AdminController::class, 'data_persalinan'])->middleware('admin');
 Route::get('/data_nifas', [AdminController::class, 'data_nifas'])->middleware('admin');
 Route::get('/data_kb', [AdminController::class, 'data_kb'])->middleware('admin');
+Route::get('/rekam_medik', [AdminController::class, 'rekam_medik'])->middleware('admin');
 
 
 //crud pasien
