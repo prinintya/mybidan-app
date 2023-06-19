@@ -76,13 +76,11 @@
 					$i = ($pasien->currentPage()*10) - 9 ?>
 					  @foreach($pasien as $p)						<tr>
 												<th scope="row">{{$i++}}</th>
-												<td>{{$p->No Rekam Medik}}</td>
 												<td>{{$p->nama}}</td>
-												<td>{{$p->tanggal_lahir}}</td>							
+												<td>{{$p->tanggal_lahir}}</td>
 												<td>{{$p->tanggal_pemeriksaan}}</td>
 												<td>{{$p->alamat}}</td>
 												<td>{{$p->telepon}}</td>
-												<!--<td>{{$p->layanan}}</td>-->
 												<td>
 
                             <a href="/edit_pasien/{{$p->id}}"><i class="fas fa-pencil-alt" style="margin-right:5px"></i></a>
