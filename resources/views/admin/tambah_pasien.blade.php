@@ -38,7 +38,7 @@
                         <form method="post" action="/store_pasien">
                             @csrf
                             <div class="mb-3">
-                                <label for="rekam_medik">Nomor Rekam Medik</label>
+                                <label for="rekam_medik">No Rekam Medik</label>
                                 <input type="number" class="form-control" name="rekam_medik" required id="rekam_medik" value="{{ old('rekam_medik') }}">
                             </div>
                             <div class="mb-3">

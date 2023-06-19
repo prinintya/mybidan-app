@@ -76,18 +76,9 @@
 					$i = ($pasien->currentPage()*10) - 9 ?>
 					  @foreach($pasien as $p)						<tr>
 												<th scope="row">{{$i++}}</th>
+												<td>{{$p->No Rekam Medik}}</td>
 												<td>{{$p->nama}}</td>
-												<td>{{$p->tanggal_lahir}}</td>
-												<!--<td>
-                            
-                            <?php 
-                            if($p->penyakit){ 
-                            echo $p->penyakit;
-                            }
-                            else{
-                                echo 'none';
-                            }
-                            ?>				</td>-->
+												<td>{{$p->tanggal_lahir}}</td>							
 												<td>{{$p->tanggal_pemeriksaan}}</td>
 												<td>{{$p->alamat}}</td>
 												<td>{{$p->telepon}}</td>

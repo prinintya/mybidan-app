@@ -25,7 +25,6 @@ class PasienController extends Controller
             'tempat_lahir' => 'nullable|string',
             'tanggal_lahir' => 'required',
             'tanggal_pemeriksaan' => 'required',
-           
             'telepon' => 'required|max:15',
             'alamat' => 'required',
             
