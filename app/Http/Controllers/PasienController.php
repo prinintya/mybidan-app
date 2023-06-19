@@ -18,19 +18,21 @@ class PasienController extends Controller
     public function store_pasien(Request $request){
         
         $request->validate([
+            'rekam_medik' => 'required',
             'nik' => 'required',
             'status' => 'nullable|string',
             'nama' => 'required|string',
             'tempat_lahir' => 'nullable|string',
             'tanggal_lahir' => 'required',
             'tanggal_pemeriksaan' => 'required',
-            'penyakit' => 'nullable|string',
+           
             'telepon' => 'required|max:15',
             'alamat' => 'required',
-            'layanan' => 'required',
+            
             ]);
             
         $save = DB::table('pasien')->insert([
+            'rekam_medik' => $request ->rekam_medik,
             'nik' => $request ->nik,
             'status' => $request ->status,
             'nama' => $request->nama,
@@ -39,8 +41,7 @@ class PasienController extends Controller
             'tanggal_pemeriksaan' => $request->tanggal_pemeriksaan,
             'telepon' => $request->telepon,
             'alamat' => $request->alamat,
-            'penyakit' => $request->penyakit,
-            'layanan' => $request->layanan,
+           
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
             ]);

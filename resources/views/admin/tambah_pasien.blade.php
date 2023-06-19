@@ -38,6 +38,10 @@
                         <form method="post" action="/store_pasien">
                             @csrf
                             <div class="mb-3">
+                                <label for="rekam_medik">Nomor Rekam Medik</label>
+                                <input type="number" class="form-control" name="rekam_medik" required id="rekam_medik" value="{{ old('rekam_medik') }}">
+                            </div>
+                            <div class="mb-3">
                                 <label for="NIK">NIK</label>
                                 <input type="number" class="form-control" name="nik" required id="NIK" value="{{ old('NIK') }}">
                             </div>
@@ -57,10 +61,10 @@
                             <label for="tanggal_lahir">Tanggal Lahir</label>
                             <input type="date" name="tanggal_lahir" required class="form-control" id="tanggal_lahir" value="{{ old('tanggal_lahir') }}">
                         </div>
-                        <div class="mb-3">
+                        <!--div class="mb-3">
                             <label for="penyakit">Penyakit</label>
                             <input type="text" name="penyakit" class="form-control" id="penyakit" value="{{ old('penyakit') }}">
-                        </div>
+                        </div>-->
                         <div class="mb-3">
                             <label for="tanggal_pemeriksaan">Tanggal Pemeriksaan</label>
                             <input type="date" name="tanggal_pemeriksaan" required class="form-control" id="tanggal_pemeriksaan" value="{{ old('tanggal_pemeriksaan') }}">
@@ -73,24 +77,7 @@
                             <label for="alamat">Alamat</label>
                             <textarea name="alamat" id="alamat" class="form-control" required>{{ old('alamat') }}</textarea>
                         </div>
-                        <div class="mb-3">
-                            <label for="pelayanan">Pilih Layanan</label>
-                                <label class="btn btn-light">
-                                    <input type="checkbox" class="me-2" name="layanan" value="Kehamilan" id="kehamilan" checked autocomplete="off"> Kehamilan
-                                </label>
-                                <label class="btn btn-light">
-                                    <input type="checkbox" class="me-2" name="layanan" value="Persalinan" id="persalinan" autocomplete="off"> Persalinan
-                                </label>
-                                <label class="btn btn-light">
-                                    <input type="checkbox" class="me-2" name="layanan" value="Nifas" id="nifas" autocomplete="off"> Nifas
-                                </label>
-                                <label class="btn btn-light">
-                                    <input type="checkbox" class="me-2" name="layanan" value="KB" id="kb" autocomplete="off"> KB
-                                </label>
-                                <label class="btn btn-light">
-                                    <input type="checkbox" class="me-2" name="layanan" value="Balita Tumbuh Kembang" id="tumbuh_kembang" autocomplete="off"> Balita Tumbuh Kembang
-                                </label>       
-                        </div>
+                        
 
 
 

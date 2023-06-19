@@ -58,10 +58,10 @@
                             <label for="alamat">Alamat</label>
                             <textarea name="alamat" id="alamat" class="form-control" required>{{ $data->alamat }}</textarea>
                         </div>
-                        <div class="mb-3">
+                        <!--<div class="mb-3">
                             <label for="penyakit">Penyakit</label>
                             <input type="text" name="penyakit" id="penyakit" class="form-control" value="{{$data->penyakit}}">
-                        </div>
+                        </div>-->
                         <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Save</button>
                         </form>
 					</div>
