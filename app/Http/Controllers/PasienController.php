@@ -63,7 +63,7 @@ class PasienController extends Controller
     public function update_pasien(Request $request){
         
         $request->validate([
-            'rekam_medik' => 'required',
+            
             'nama' => 'required|string',
             'telepon' => 'required',
             'tanggal_pemeriksaan' => 'required',
@@ -74,7 +74,7 @@ class PasienController extends Controller
         $pasien = DB::table('pasien')->find($request->id);
         
         DB::table('pasien')->where('id', $request->id)->update([
-            'rekam_medik' => 'required',
+            
             'nama' => $request->nama,
             'tanggal_pemeriksaan' => $request->tanggal_pemeriksaan,
             'tanggal_lahir' => $request->tanggal_lahir,
