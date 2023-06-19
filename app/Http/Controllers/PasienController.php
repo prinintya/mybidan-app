@@ -41,7 +41,6 @@ class PasienController extends Controller
             'tanggal_pemeriksaan' => $request->tanggal_pemeriksaan,
             'telepon' => $request->telepon,
             'alamat' => $request->alamat,
-           
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
             ]);
@@ -65,8 +64,8 @@ class PasienController extends Controller
     public function update_pasien(Request $request){
         
         $request->validate([
+            'rekam_medik' => 'required',
             'nama' => 'required|string',
-            'penyakit' => 'nullable|string',
             'telepon' => 'required',
             'tanggal_pemeriksaan' => 'required',
             'tanggal_lahir' => 'required',
@@ -76,8 +75,8 @@ class PasienController extends Controller
         $pasien = DB::table('pasien')->find($request->id);
         
         DB::table('pasien')->where('id', $request->id)->update([
+            'rekam_medik' => 'required',
             'nama' => $request->nama,
-            'penyakit' => $request->penyakit,
             'tanggal_pemeriksaan' => $request->tanggal_pemeriksaan,
             'tanggal_lahir' => $request->tanggal_lahir,
             'telepon' => $request->telepon,
