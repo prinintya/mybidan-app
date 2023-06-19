@@ -12,7 +12,7 @@
 		
 					
 					<div class="left-content">
-						<h4 class="content-title mb-1" style="margin-left: 0.5cm">Data Pasien</h4>
+						<h4 class="content-title mb-1" style="margin-top: 0.5cm">Data Pasien</h4>
 						<nav aria-label="breadcrumb">
 						</nav>
 					</div>
