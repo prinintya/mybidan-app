@@ -15,6 +15,10 @@ class AdminController extends Controller
         return view('admin.rekam_medik');
     }
 
+    public function keuangan(){
+        return view('admin.keuangan');
+    }
+
     public function data_pasien(){
         $pasien = DB::table('pasien')->paginate(10);
         return view('admin.data_pasien', ['pasien' => $pasien]);

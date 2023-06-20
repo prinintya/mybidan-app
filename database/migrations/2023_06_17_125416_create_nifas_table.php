@@ -15,6 +15,7 @@ class CreateNifasTable extends Migration
     {
         Schema::create('nifas', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
             $table->date('tglPemeriksaan');
             $table->string('keluhan');
             $table->string('riwayatPasien');

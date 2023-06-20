@@ -15,6 +15,7 @@ class PersalinanController extends Controller
     public function store_persalinan(Request $request){
         
         $request->validate([
+            'nama' => 'required|string',
             'tglPemeriksaan' => 'required',
             'keluhan' => 'nullable|string',
             'riwayatPasien' => 'required|string',
@@ -25,6 +26,7 @@ class PersalinanController extends Controller
             ]);
             
         $save = DB::table('persalinans')->insert([
+            'nama' => $request->nama,
             'tglPemeriksaan' => $request ->tglPemeriksaan,
             'keluhan' => $request ->keluhan,
             'riwayatPasien' => $request ->riwayatPasien,

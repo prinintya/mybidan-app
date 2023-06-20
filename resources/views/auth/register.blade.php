@@ -29,7 +29,7 @@
     <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="wrapper bg-info text-center p-3" style="margin-top: 2.5cm">
+                    <div class="wrapper bg-primary text-center p-3" style="margin-top: 2.5cm">
                         <img class="" src="/gambar/logoBidan.png" width="250px" height="150px">
                     <form method="post" action="/store_register">
                         @csrf

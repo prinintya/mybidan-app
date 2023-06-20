@@ -1,5 +1,5 @@
 @extends('layout.layout')
 
-@section('title', 'Rekam Medik')
+@section('title', 'Laporan Keuangan')
 
 @section('content')

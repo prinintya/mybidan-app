@@ -22,7 +22,6 @@ class PasienSeeder extends Seeder
                 'tanggal_lahir' => $faker->date($format = 'Y-m-d', $max = 'now'),
                 'tanggal_masuk' => $faker->date($format = 'Y-m-d', $max = 'now'),
                 'telepon' => $faker->unixTime($max = 'now'),
-                'penyakit' => $faker->jobTitle,
                 'alamat' => $faker->city,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')

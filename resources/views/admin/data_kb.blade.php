@@ -11,7 +11,7 @@
 
 					
 					<div class="left-content">
-						<h4 class="content-title mb-1" style="margin-top: 0.5cm">Data KB</h4>
+						<h4 class="content-title mb-1" style="padding: 2cm">Data KB</h4>
 						<nav aria-label="breadcrumb">
 						</nav>
 					</div>
@@ -25,8 +25,8 @@
 				<div class="row row-sm">
 
 					<!--div-->
-					<div class="col-xl-12">
-						<div class="card">
+					<div class="col-md-12">
+						<div class="card" style="padding-top: 3cm">
 							<div class="card-body">
 							     <form method="post" action="#">
 							         @csrf

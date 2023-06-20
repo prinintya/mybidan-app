@@ -15,6 +15,7 @@ class NifasController extends Controller
     public function store_nifas(Request $request){
         
         $request->validate([
+            'nama' => 'required|string',
             'tglPemeriksaan' => 'required',
             'keluhan' => 'nullable|string',
             'riwayatPasien' => 'required|string',
@@ -24,6 +25,7 @@ class NifasController extends Controller
             ]);
             
         $save = DB::table('nifas')->insert([
+            'nama' => $request->nama,
             'tglPemeriksaan' => $request ->tglPemeriksaan,
             'keluhan' => $request ->keluhan,
             'riwayatPasien' => $request ->riwayatPasien,

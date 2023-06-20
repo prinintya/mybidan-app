@@ -15,6 +15,7 @@ class KehamilanController extends Controller
     public function store_kehamilan(Request $request){
         
         $request->validate([
+            'nama' => 'required|string',
             'tglPemeriksaan' => 'required',
             'keluhan' => 'nullable|string',
             'riwayatPasien' => 'required|string',
@@ -24,6 +25,7 @@ class KehamilanController extends Controller
             ]);
             
         $save = DB::table('kehamilans')->insert([
+            'nama' => $request->nama,
             'tglPemeriksaan' => $request ->tglPemeriksaan,
             'keluhan' => $request ->keluhan,
             'riwayatPasien' => $request ->riwayatPasien,

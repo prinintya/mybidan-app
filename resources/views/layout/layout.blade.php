@@ -20,7 +20,7 @@
 
 		<!-- Bootstrap css -->
 		<link href="https://laravel.spruko.com/dashfox/ltr/assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
-
+		
 		<!-- Icons css -->
 		<link href="https://laravel.spruko.com/dashfox/ltr/assets/plugins/icons/icons.css" rel="stylesheet">
 
@@ -51,7 +51,7 @@
 
     </head>
 
-    <body  class="">
+    <body  class="main-body light-theme app sidebar-mini active leftmenu-color">
 		
 
         <!-- Loader -->
@@ -60,113 +60,51 @@
 		</div>
 		<!-- /Loader -->
 
-        <!-- main-sidebar -->
-		<!--<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-		<aside class="app-sidebar bg-light" >
-			<div class="">
-				<img class="" src="/gambar/logoBidan.png" width="245px" height="130px" style="padding-left: 0.5cm; padding-top:0.2cm" >
-			</div>-->
-			<!--<div class="main-sidemenu sidebar-scroll">
-				<ul class="side-menu">-->
-					<!-- <li class="slide">
-						<a class="side-menu__item" href="/"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
-                     <i class="fas fa-users" style="font-size:20px; margin-right:5px"></i>
-						<span class="side-menu__label">Data Pegawai</span></a>
-					</li> -->
-					<!--<li class="slide">
-						<a class="side-menu__item" href="/data_pasien"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
-                    <i class="fas fa-male" style="font-size:20px; margin-right:12px"></i>
-						<span class="side-menu__label">Data Pasien</span></a>
-					</li>
-					 <li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="/tempat_tidur"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
-                    <i class="fas fa-book" style="font-size:17px; margin-right:9px"></i>
-						<span class="side-menu__label">Laporan Rekam Medik</span></a>
-					</li> 
-					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="/data_rawat"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
-                    <i class="fas fa-database" style="font-size:17px; margin-right:9px"></i>
-						<span class="side-menu__label">Laporan Keuangan</span></i></a>
-					</li> -->
-					<!-- <li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="/obat_perlengkapan"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
-						<i class="fas fa-tablets" style="font-size:17px; margin-right:9px"></i>
-						<span class="side-menu__label">Data Obat & Perlengkapan</span></a>
-					</li> -->
-					<!-- <li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="/data_tindakan"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
-						<i class="fas fa-file-medical-alt" style="font-size:22px; margin-right:10px"></i>
-						<span class="side-menu__label">Data Tindakan</span></a>
-					</li> -->
-					
-					<!--<div class="dropdown">
-						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Pelayanan
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="/data_kehamilan">Kehamilan</a>
-							<a class="dropdown-item" href="/data_persalinan">Persalinan</a>
-							<a class="dropdown-item" href="/data_nifas">Nifas</a>
-							<a class="dropdown-item" href="/data_kb">KB</a>
-						</div>
-					</div>-->
-				
-		<!--</aside>-->
-		<!-- main-sidebar -->
-		<!-- main-content -->
-		<div class="main-content app-content">
-			
-        <!-- main-header -->
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-sm bg-primary justify-content-center navbar-dark fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/">
+					<img class="" src="/gambar/logoBidan.png" width="115px" height="55px">
+				</a>
+			  </div>
 		
-			<div class="main-header sticky side-header nav nav-item">	
-						
-				<div class="container-fluid">
-					<div class="main-header-left">	
-						<div class="">
-							<img class="" src="/gambar/logoBidan.png" width="200px" height="130px" style="padding-top: 0.7cm" >
-						</div>			 
-						<div class="app-sidebar__toggle d-md-none" data-toggle="sidebar">
-							<a class="open-toggle" href="#"><i class="fas fa-bars" style="font-size:25px; color:blue"></i></a>
-							<a class="close-toggle" href="#"><i class="fas fa-times"></i></a>
-						</div>
+
+			  <!--Profil-->
+			<div class="container-fluid">
+				<div class="main-header-left">			 
+					<div class="app-sidebar__toggle d-md-none" data-toggle="sidebar">
+						<a class="open-toggle" href="#"><i class="fas fa-bars" style="font-size:25px"></i></a>
+						<a class="close-toggle" href="#"><i class="fas fa-times"></i></a>
 					</div>
-					<div class="main-header-right">
-						<div class="nav nav-item  navbar-nav-right ml-auto">
-							<div class="dropdown main-profile-menu nav nav-item nav-link">
-								<a class="profile-user d-flex" href=""><img src="/gambar/profil.png">
-									<div class="p-text d-none">
-										<span class="p-name font-weight-bold">{{session('username')}}</span>
-										<small class="p-sub-text">Administrator</small>
-									</div>
-								</a>
-								<div class="dropdown-menu shadow">
-									<div class="main-header-profile header-img">
-										<div class="main-img-user"><img src="/gambar/profil.png"></div>
-										<h6>{{session('username')}}</h6><span>Administrator</span>
-									</div>
-									<a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+				</div>
+				<div class="main-header-right">
+					<div class="nav nav-item  navbar-nav-right ml-auto">
+						<div class="dropdown main-profile-menu nav nav-item nav-link">
+							<a class="profile-user d-flex" href=""><img src="/gambar/profil.png">
+								<div class="p-text d-none">
+									<span class="p-name font-weight-bold">{{session('username')}}</span>
+									<small class="p-sub-text">Administrator</small>
 								</div>
+							</a>
+							<div class="dropdown-menu shadow">
+								<div class="main-header-profile header-img">
+									<div class="main-img-user"><img src="/gambar/profil.png"></div>
+									<h6>{{session('username')}}</h6><span>Administrator</span>
+								</div>
+								<a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt"></i> Log Out</a>
 							</div>
-							<!--<div class="dropdown main-header-message right-toggle">
+						</div>
+						<div class="dropdown main-header-message right-toggle">
 								<a class="nav-link pr-0" data-toggle="sidebar-right" data-target=".sidebar-right">
 									<i class="fas fa-caret-down" style="font-size:20px"></i>
 								</a>
-							</div>-->
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- /main-header -->
-            <!-- container -->
-                @yield('content')
-            <!-- Container closed -->
-
-		</div>
-		<!-- main-content closed -->
-
-        <!-- Sidebar-right-->
+			<!-- Sidebar-right-->
 		<div class="sidebar sidebar-right sidebar-animate">
-			<div class="panel panel-primary card mb-0 box-shadow">
+			<div class="panel panel-dark card mb-0 box-shadow">
 				<div class="tab-menu-heading border-0 p-3">
 					<div class="card-title mb-0">Profil Saya</div>
 					<div class="card-options ml-auto">
@@ -174,7 +112,7 @@
 					</div>
 				</div>
 				<div class="panel-body tabs-menu-body latest-tasks p-0 border-0">
-					                    <div class="tab-content">
+					<div class="tab-content">
 						<div class="tab-pane active" id="side1">
 							<div class="card-body text-center">
 								<div class="dropdown user-pro-body">
@@ -200,6 +138,32 @@
 			</div>
 		</div>
 		<!--/Sidebar-right-->        
+
+
+
+		  </nav>
+		<!-- container -->
+		@yield('content')
+		<!-- Container closed -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
         <!-- Footer opened -->
 		<div class="main-footer ht-40">

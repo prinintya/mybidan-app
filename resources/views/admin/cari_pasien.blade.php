@@ -11,7 +11,7 @@
 
 					
 					<div class="left-content">
-						<h4 class="content-title mb-1" style="margin-left: 0.5cm">Cari Pasien</h4>
+						<h4 class="content-title mb-1"  style="padding: 2cm">Cari Pasien</h4>
 						<nav aria-label="breadcrumb">
 						</nav>
 					</div>
@@ -26,7 +26,7 @@
 
 					<!--div-->
 					<div class="col-xl-12">
-						<div class="card">
+						<div class="card" style="padding-top: 3cm">
 							<div class="card-body">
                    
 								<div class="table-responsive">
@@ -41,11 +41,11 @@
 
 		                  <th>Nama</th>
 												<th>Tanggal Lahir</th>
-												<!--<th>Penyakit</th>-->
+												
 												<th>Tanggal Masuk</th>
 												<th>Alamat</th>
 												<th>Telepon</th>
-												<!--<th>Pelayanan</th>-->
+												
 											</tr>
 										</thead>
 										<tbody>
@@ -54,16 +54,7 @@
 												<th scope="row">{{$i++}}</th>
 												<td>{{$p->nama}}</td>
 												<td>{{$p->tanggal_lahir}}</td>
-												<!--<td>
-                            
-                            <?php 
-                            if($p->penyakit){ 
-                            echo $p->penyakit;
-                            }
-                            else{
-                                echo 'none';
-                            }
-                            ?>			</td>-->
+												
 												<td>{{$p->tanggal_pemeriksaan}}</td>
 												<td>{{$p->alamat}}</td>
 												<td>{{$p->telepon}}</td>

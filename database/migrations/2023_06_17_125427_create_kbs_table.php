@@ -15,6 +15,7 @@ class CreateKbsTable extends Migration
     {
         Schema::create('kbs', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
             $table->date('tglPemeriksaan');
             $table->string('tujuanKunjungan');
             $table->string('metodeKb');

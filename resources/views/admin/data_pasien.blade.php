@@ -5,20 +5,14 @@
 @section('content')
 <!-- breadcrumb -->
 
+			<div class="justify-content-center">
+				<h4 class="content-title mb-1" style="padding-top: 2.5cm; padding-left:1.5cm">Data Pasien</h4>
+				<nav aria-label="breadcrumb">
+				</nav>
+			</div>
+            <div class="container-fluid mg-t-20">
 
-            <div class="container mg-t-20">
-
-				<div class="breadcrumb-header justify-content-between">
-		
-					
-					<div class="left-content">
-						<h4 class="content-title mb-1" style="margin-top: 0.5cm">Data Pasien</h4>
-						<nav aria-label="breadcrumb">
-						</nav>
-					</div>
-
-
-				</div>
+				
 				<!-- breadcrumb -->
 
 				
@@ -27,7 +21,7 @@
 
 					<!--div-->
 					<div class="col-md-12">
-						<div class="card">
+						<div class="card" style="padding-top: 0.2cm">
 							<div class="card-body">
 								
 							     <form method="post" action="/cari_pasien">
@@ -87,20 +81,7 @@
                             <form method="post" class="d-inline" action="/hapus_pasien">
                                 @csrf
                                 <input type="hidden" name="id" value="{{$p->id}}">
-                            <button class="btn" type="submit"><i class="far fa-trash-alt"></i></button>
-							<div class="dropdown">
-								<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Pelayanan
-								</button>
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-									<a class="dropdown-item" href="/data_kehamilan">Kehamilan</a>
-									<a class="dropdown-item" href="/data_persalinan">Persalinan</a>
-									<a class="dropdown-item" href="/data_nifas">Nifas</a>
-									<a class="dropdown-item" href="/data_kb">KB</a>		
-								</div>
-							</div>
-							<button type="button" class="btn btn-warning" style="margin-top:2px" href="/rekam_medik" >Rekam Medik</button>
-
+                            <button class="btn" type="submit"><i class="far fa-trash-alt" style="color: red"></i></button>
                             </form>
 									    		</td>
 											</tr>

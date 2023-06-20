@@ -15,6 +15,7 @@ class CreateKehamilansTable extends Migration
     {
         Schema::create('kehamilans', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
             $table->date('tglPemeriksaan');
             $table->string('keluhan');
             $table->string('riwayatPasien');

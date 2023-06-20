@@ -33,6 +33,8 @@ Route::get('/data_persalinan', [AdminController::class, 'data_persalinan'])->mid
 Route::get('/data_nifas', [AdminController::class, 'data_nifas'])->middleware('admin');
 Route::get('/data_kb', [AdminController::class, 'data_kb'])->middleware('admin');
 Route::get('/rekam_medik', [AdminController::class, 'rekam_medik'])->middleware('admin');
+Route::get('/keuangan', [AdminController::class, 'keuangan'])->middleware('admin');
+
 
 
 //crud pasien

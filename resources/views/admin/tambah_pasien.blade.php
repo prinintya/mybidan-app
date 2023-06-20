@@ -11,7 +11,7 @@
 
 					
 					<div class="left-content">
-						<h4 class="content-title mb-1">Tambah Pasien</h4>
+						<h4 class="content-title mb-1" style="padding: 1.5cm">Tambah Pasien</h4>
 						<nav aria-label="breadcrumb">
 						</nav>
 					</div>
@@ -25,7 +25,7 @@
 				<div class="row row-sm">
 
 					<!--div-->
-					<div class="col-xl-12">
+					<div class="col-md-12" style="padding:3cm">
 					    @if($errors->any())
 					        <div class="alert alert-danger my-3">
 					            <ul>

@@ -15,6 +15,7 @@ class KbController extends Controller
     public function store_kb(Request $request){
         
         $request->validate([
+            'nama' => 'required|string',
             'tglPemeriksaan' => 'required',
             'tujuanKunjungan' => 'required|string',
             'metodeKb' => 'required|string',
@@ -24,6 +25,7 @@ class KbController extends Controller
             ]);
             
         $save = DB::table('kbs')->insert([
+            'nama' => $request->nama,
             'tglPemeriksaan' => $request ->tglPemeriksaan,
             'tujuanKunjungan' => $request ->tujuanKunjungan,
             'metodeKb' => $request ->metodeKb,

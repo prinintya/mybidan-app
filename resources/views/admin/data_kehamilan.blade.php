@@ -3,24 +3,15 @@
 @section('title', 'Data Pasien')
 
 @section('content')
-            <div class="container-fluid mg-t-20">
+            
+<div class="justify-content-center">
+	<h4 class="content-title mb-1" style="padding-top: 2.5cm; padding-left:1.5cm">Data Kehamilan</h4>
+	<nav aria-label="breadcrumb">
+	</nav>
+</div>
+			<div class="container-fluid mg-t-20">
 
-				<!-- breadcrumb -->
-
-				<div class="breadcrumb-header justify-content-between">
-		
-					
-					<div class="left-content">
-						<h4 class="content-title mb-1" style="margin-top: 0.5cm">Data Kehamilan</h4>
-						<nav aria-label="breadcrumb">
-						</nav>
-					</div>
-
-
-				</div>
-				<!-- breadcrumb -->
-
-				
+			
 				<!-- row opened -->
 				<div class="row row-sm">
 
@@ -58,6 +49,7 @@
 										<thead>
 					                        <tr>
 												<th>No</th>
+												<th>Nama</th>
 		                  						<th>Tanggal Pemeriksaan</th>
 												<th>Keluhan</th>
 												<th>Riwayat Pasien</th>
@@ -74,6 +66,7 @@
 					                        @foreach($kehamilan as $k)						
                                             <tr>
 												<th scope="row">{{$i++}}</th>
+												<td>{{$k->nama}}</td>
 												<td>{{$k->tglPemeriksaan}}</td>
 												<td>{{$k->keluhan}}</td>
 												<td>{{$k->riwayatPasien}}</td>
