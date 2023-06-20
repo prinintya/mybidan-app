@@ -61,7 +61,7 @@
 		<!-- /Loader -->
 
 		<!--Navbar-->
-		<nav class="navbar navbar-expand-sm bg-primary justify-content-center navbar-dark fixed-top">
+		<nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="/">
 					<img class="" src="/gambar/logoBidan.png" width="115px" height="55px">
@@ -96,7 +96,7 @@
 						</div>
 						<div class="dropdown main-header-message right-toggle">
 								<a class="nav-link pr-0" data-toggle="sidebar-right" data-target=".sidebar-right">
-									<i class="fas fa-caret-down" style="font-size:20px"></i>
+									<i class="fas fa-caret-down" style="font-size:20px; color:white"></i>
 								</a>
 						</div>
 					</div>
@@ -147,24 +147,6 @@
 		<!-- Container closed -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
         <!-- Footer opened -->
 		<div class="main-footer ht-40">
 			<div class="container-fluid pd-t-0-f ht-100p">
