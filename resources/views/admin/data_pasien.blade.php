@@ -82,6 +82,16 @@
                                 @csrf
                                 <input type="hidden" name="id" value="{{$p->id}}">
                             <button class="btn" type="submit"><i class="far fa-trash-alt" style="color: red"></i></button>
+								<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Pelayanan
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="/data_kehamilan">Kehamilan</a>
+									<a class="dropdown-item" href="/data_persalinan">Persalinan</a>
+									<a class="dropdown-item" href="/data_nifas">Nifas</a>
+									<a class="dropdown-item" href="/data_kb">KB</a>		
+								</div>
+							</div>
                             </form>
 									    		</td>
 											</tr>

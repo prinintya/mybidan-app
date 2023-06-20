@@ -3,22 +3,12 @@
 @section('title', 'Data KB')
 
 @section('content')
+<div class="justify-content-center">
+	<h4 class="content-title mb-1" style="padding-top: 2.5cm; padding-left:1.5cm">Data KB</h4>
+	<nav aria-label="breadcrumb">
+	</nav>
+</div>
             <div class="container-fluid mg-t-20">
-
-				<!-- breadcrumb -->
-
-				<div class="breadcrumb-header justify-content-between">
-
-					
-					<div class="left-content">
-						<h4 class="content-title mb-1" style="padding: 2cm">Data KB</h4>
-						<nav aria-label="breadcrumb">
-						</nav>
-					</div>
-
-
-				</div>
-				<!-- breadcrumb -->
 
 				
 				<!-- row opened -->
@@ -58,6 +48,7 @@
 										<thead>
 					                        <tr>
 												<th>No</th>
+												<th>Nama</th>
 		                  						<th>Tanggal Pemeriksaan</th>
 												<th>Tujuan Kunjungan</th>
 												<th>Metode KB<</th>
@@ -75,6 +66,7 @@
 					                        @foreach($kb as $k)						
                                             <tr>
 												<th scope="row">{{$i++}}</th>
+												<td>{{$k->nama}}</td>
 												<td>{{$k->tglPemeriksaan}}</td>
 												<td>{{$k->tujuanKunjungan}}</td>
 												<td>{{$k->metodeKb}}</td>

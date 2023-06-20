@@ -3,22 +3,15 @@
 @section('title', 'Data Nifas')
 
 @section('content')
+<div class="justify-content-center">
+	<h4 class="content-title mb-1" style="padding-top: 2.5cm; padding-left:1.5cm">Data Nifas</h4>
+	<nav aria-label="breadcrumb">
+	</nav>
+</div>
             <div class="container-fluid mg-t-20">
 
-				<!-- breadcrumb -->
 
-				<div class="breadcrumb-header justify-content-between">
-
-					
-					<div class="left-content">
-						<h4 class="content-title mb-1" style="margin-top: 0.5cm">Data Nifas</h4>
-						<nav aria-label="breadcrumb">
-						</nav>
-					</div>
-
-
-				</div>
-				<!-- breadcrumb -->
+				
 
 				
 				<!-- row opened -->
@@ -58,6 +51,7 @@
 										<thead>
 					                        <tr>
 												<th>No</th>
+												<th>Nama</th>
 		                  						<th>Tanggal Pemeriksaan</th>
 												<th>Keluhan</th>
 												<th>Riwayat Pasien</th>
@@ -75,6 +69,7 @@
 					                        @foreach($nifas as $n)						
                                             <tr>
 												<th scope="row">{{$i++}}</th>
+												<td>{{$k->nama}}</td>
 												<td>{{$n->tglPemeriksaan}}</td>
 												<td>{{$n->keluhan}}</td>
 												<td>{{$n->riwayatPasien}}</td>

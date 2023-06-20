@@ -12,7 +12,7 @@
 		<button class="btn btn-primary btn-lg dropdown-toggle" style="margin-left:2px" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			Pilih Pelayanan
 		</button>
-		<div class="dropdown-menu bg-primary" style="font-color: white" aria-labelledby="dropdownMenuButton">
+		<div class="dropdown-menu bg-danger" style="font-color: white" aria-labelledby="dropdownMenuButton">
 			<a class="dropdown-item" href="/data_kehamilan">Kehamilan</a>
 			<a class="dropdown-item" href="/data_persalinan">Persalinan</a>
 			<a class="dropdown-item" href="/data_nifas">Nifas</a>
