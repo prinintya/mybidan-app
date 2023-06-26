@@ -29,7 +29,7 @@
     <div class="container">
             <div class="row">
                 <div class="col-sm-5 ">
-                    <div class="wrapper bg-primary text-center p-3 " style="margin-top: 2.5cm">
+                    <div class="wrapper bg-light text-center p-3 " style="margin-top: 2.5cm">
                         <div class="">
                             <img class="" src="/gambar/logoBidan.png" width="250px" height="150px">
                         </div>
@@ -67,7 +67,7 @@
                             <button type="submit" class="btn btn-success -block">Login</button>
                         </div>
                     </form>
-                    <a href="/register" class="nav-link">Belum punya akun? daftar sekarang</a>
+                    <a href="/register" class="nav-link" >Belum punya akun? daftar sekarang</a>
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@
 
 					<!--div-->
 					<div class="col-md-12">
-						<div class="card" style="padding-top: 3cm">
+						<div class="card">
 							<div class="card-body">
 							     <form method="post" action="#">
 							         @csrf
