@@ -17,7 +17,7 @@
 				<div class="row row-sm">
 
 					<!--div-->
-					<div class="col-md-12" style="padding:3cm">
+					<div class="col-md-12" style="padding:0.5cm">
 					    @if($errors->any())
 					        <div class="alert alert-danger my-3">
 					            <ul>
@@ -29,6 +29,10 @@
 					    @endif
                         <form method="post" action="/store_kb">
                             @csrf
+                            <div class="mb-3">
+                                <label for="nama">Nama</label>
+                                <input type="text" class="form-control" name="nama" required id="nama" value="{{ old('nama') }}">
+                            </div>
                             <div class="mb-3">
                                 <label for="tglPemeriksaan">Tanggal Pemeriksaan</label>
                                 <input type="date" name="tglPemeriksaan" required class="form-control" id="tglPemeriksaan" value="{{ old('tglPemeriksaan') }}">

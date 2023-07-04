@@ -82,7 +82,7 @@
 								<a class="dropdown-item" href="/data_nifas">Nifas</a>
 								<a class="dropdown-item" href="/data_kb">KB</a>
 							</div>
-							<a class="btn btn-outline-light btn-lg m-2" href="/rekam_medik" role="button">Laporan Rekam Medik</a>
+							<a class="btn btn-outline-light btn-lg m-2" href="/rekam_medik" role="button">Rekam Medik</a>
 								
 						</ul>
 					</div>

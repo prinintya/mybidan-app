@@ -31,6 +31,11 @@
                         <form method="post" action="/store_kehamilan">
                             @csrf
                             <div class="mb-3">
+                                <label for="nama">Nama</label>
+                                <input type="text" class="form-control" name="nama" required id="nama" value="{{ old('nama') }}">
+                            </div>
+                            
+                            <div class="mb-3">
                                 <label for="tglPemeriksaan">Tanggal Pemeriksaan</label>
                                 <input type="date" name="tglPemeriksaan" required class="form-control" id="tglPemeriksaan" value="{{ old('tglPemeriksaan') }}">
                             </div>
